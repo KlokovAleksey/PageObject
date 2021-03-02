@@ -1,5 +1,6 @@
 package ru.netology.web.data;
 
+import lombok.AllArgsConstructor;
 import lombok.Value;
 
 public class DataHelper {
@@ -29,16 +30,25 @@ public class DataHelper {
   }
 
   @Value
+  @AllArgsConstructor
   public static class CardInfo {
-    private String number;
-    private String balance;
+    private String numberCard;
   }
 
 public static CardInfo getFirstCardInfo() {
-    return new CardInfo("5559 0000 0000 0001","10 000 RUB");}
+    return new CardInfo("5559 0000 0000 0001");}
+
 
   public static CardInfo getSecondCardInfo() {
-    return new CardInfo("5559 0000 0000 0002","10 000 RUB");}
+    return new CardInfo("5559 0000 0000 0002");}
+
+    public static int addingBalance(int balance,int amount){
+    return balance + amount;
+    }
+
+  public static int withdrawalBalance(int balance,int amount) {
+    return balance - amount;
+  }
 
 }
 
