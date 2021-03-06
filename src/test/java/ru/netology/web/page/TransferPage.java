@@ -18,7 +18,7 @@ public class TransferPage {
         pageName.shouldBe(Condition.visible);
     }
 
-    public DashboardPage transferMoney(DataHelper.CardInfo info, int amount) {
+    public DashboardPage transferMoney(int amount,DataHelper.CardInfo info) {
         amountField.setValue(String.valueOf(amount));
         fromField.setValue(info.getNumberCard());
         transferButton.click();

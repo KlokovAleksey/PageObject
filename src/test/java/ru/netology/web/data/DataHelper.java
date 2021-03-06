@@ -1,6 +1,5 @@
 package ru.netology.web.data;
 
-import lombok.AllArgsConstructor;
 import lombok.Value;
 
 public class DataHelper {
@@ -16,10 +15,6 @@ public class DataHelper {
     return new AuthInfo("vasya", "qwerty123");
   }
 
-  public static AuthInfo getOtherAuthInfo(AuthInfo original) {
-    return new AuthInfo("petya", "123qwerty");
-  }
-
   @Value
   public static class VerificationCode {
     private String code;
@@ -30,7 +25,6 @@ public class DataHelper {
   }
 
   @Value
-  @AllArgsConstructor
   public static class CardInfo {
     private String numberCard;
   }
