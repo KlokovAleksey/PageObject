@@ -14,5 +14,7 @@
 * Перевод с определённой карты на другую карту n'ой суммы
 * Проверки баланса по карте (со страницы списка карт)
 
+Для запуска выполнить команду : ```gradlew clean test```
+
 
 # [![Build status](https://ci.appveyor.com/api/projects/status/wtklm7qs1ruiromb?svg=true)](https://ci.appveyor.com/project/KlokovAleksey/pageobject)
